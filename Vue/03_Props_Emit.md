@@ -4,7 +4,8 @@
 >* node와 npm 이 필수 조건이다.
 >* node  관리는 nvm을 이용해서 작업한다.
     * 반드시 cmd `관리자 권한` 으로 실행하자
-    * <a href="https://github.com/coreybutler/nvm-windows/releases" target="_black">NVM 다운로드</a>
+    <br>
+* <a href="https://github.com/coreybutler/nvm-windows/releases" target="_black">NVM 다운로드</a>
     
 
 ```powershell
