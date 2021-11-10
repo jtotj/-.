@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrap" style="position: relative;">
+        <div class="box" style="width:150px;height:150px;background:yellowgreen;"></div>
+        <div class="blur-deem">
+            <svg height="100%" width="100%">
+                <defs>
+                  <filter id="f1" x="0" y="0">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+                  </filter>
+                </defs>
+              </svg>
+        </div>
+    </div>
+    <style>
+        .blur-deem{
+            position: absolute;
+            width:100%;height:100%;
+            left:0;top:0;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+
+</body>
+</html>
