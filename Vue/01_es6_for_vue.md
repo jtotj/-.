@@ -1,13 +1,11 @@
 # ES6 for vue
 > Intro
-
 ---
 
 ## Babel
 * 구 버전 브라우저 중에는 ES6의 기능을 지원하지 않는 브라우저가 있으므로 ES6 -> ES5로 변환해주는 컴파일러
-    * 바벨 온라인 에디터    https://babeljs.io/repl/   
+* 바벨 온라인 에디터    https://babeljs.io/repl/   
 ```javascript
-
 module: {
     loaders: [{
         test: /\.js$./,
@@ -21,7 +19,6 @@ module: {
 ```
 
 * 나중에 자세히 다룰 것
-
 ---
 
 ## For in, For of, ForEach
@@ -94,6 +91,7 @@ scrollDispatch(target.scrollTop)
 
 * state 속성 선언 부분
 
+
 ```javascript
 // store.js 
 new Vuex.Store({
@@ -104,6 +102,8 @@ new Vuex.Store({
     }
 });
 ```
+
+
 ```javascript
 // app.js
 new Vue({
@@ -119,13 +119,17 @@ new Vue({
 });
 ```
 
+
 * 뷰엑스에서 제공하는 mapState함수를 이용하면 위 코드처럼 `state`에 일일이 접근하지 않아도 된다.
+
+
 ```javascript
 import { mapState } from 'vuex';
 
 var state = mapState(['prop1', 'prop2', 'prop3']);
 ```
 * mapState에 `...`연산자를 붙여 computed 속성에서 쉽게 뷰엑스의 state에 접근할 수 있다.
+
 
 ```javascript
 // app.js
