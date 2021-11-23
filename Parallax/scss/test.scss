@@ -1,0 +1,40 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
+body{margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.slider{
+    position: relative;
+    height: 100vh;
+    border:1px solid #f0f;
+    img{
+        width: 100%;
+    }
+    &:last-of-type
+    {
+        transform: translateZ(.4px) scale(1) translateX(0%) translateY(0%) rotate(-5deg);
+    }
+}
+
+
+img {
+    //position: absolute;
+    
+    transform: translateZ(.25px) scale(1) translateX(0%) translateY(0%) rotate(2deg);
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(240,230,220, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  }
+
+  img:last-of-type {
+   
+  }

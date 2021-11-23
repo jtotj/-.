@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.slider {
+  position: relative;
+  height: 100vh;
+  border: 1px solid #f0f;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.slider:last-of-type {
+  -webkit-transform: translateZ(0.4px) scale(1) translateX(0%) translateY(0%) rotate(-5deg);
+          transform: translateZ(0.4px) scale(1) translateX(0%) translateY(0%) rotate(-5deg);
+}
+
+img {
+  -webkit-transform: translateZ(0.25px) scale(1) translateX(0%) translateY(0%) rotate(2deg);
+          transform: translateZ(0.25px) scale(1) translateX(0%) translateY(0%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240, 230, 220, 0.7);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+/*# sourceMappingURL=test.css.map */

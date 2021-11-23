@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pure CSS Parallax Scrolling</title>
+  
+  
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import url(http://fonts.googleapis.com/css?family=Nunito);
+
+
+    </style>
+  <!-- 
+
+    조건
+
+    parent ::
+
+    perspective: 1px; //
+    transform-style: preserve-3d;
+
+
+    childen ::
+
+    transform: translateZ(.25px)  //값이 양수에 큰 거 일수록 앞으로 and 더 빨리 움직인다.
+    support ie 10
+
+   -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <link rel="stylesheet" href="css/test.css">
+
+</head>
+
+<body>
+
+  <section class="slider">
+    <img src="http://lorempixel.com/640/480/abstract/6/">
+  </section>
+
+  <section class="slider">
+    <img src="http://lorempixel.com/640/480/abstract/4/"> 
+  </section>
+  
+  
+
+
+  
+  
+</body>
+</html>
